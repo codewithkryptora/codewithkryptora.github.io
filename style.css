@@ -1,0 +1,47 @@
+
+:root{
+  --accent:#6C63FF;
+  --accent-2:#00B7FF;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --whatsapp:#25D366;
+  --email:#007bff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; color:#111; background:var(--bg); margin:0; line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+.site-header{background:#0b1220;color:#fff;position:sticky;top:0;z-index:40}
+.header-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem}
+.nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+.hero{padding:70px 0;color:#fff;background:linear-gradient(120deg,var(--accent),var(--accent-2));text-align:left;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+.hero-inner{display:flex;gap:22px;align-items:center;justify-content:space-between}
+.hero-text h1{font-size:2rem;margin-bottom:8px}
+.lead{color:rgba(255,255,255,0.95);max-width:760px}
+.cta{display:inline-block;padding:10px 18px;background:#fff;color:#111;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
+.stat{background:rgba(255,255,255,0.06);padding:12px;border-radius:10px;text-align:center;min-width:80px}
+.stat small{display:block;color:rgba(255,255,255,0.9);font-size:0.85rem;margin-top:6px}
+.section{padding:60px 0}
+.section.alt{background:#f7f9fc}
+h2{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,0.06);transition:transform .28s}
+.card h3{margin:0 0 8px 0}
+.card .desc{color:var(--muted);font-size:0.95rem;margin-bottom:12px}
+.card .price{font-weight:800;color:var(--accent);font-size:1.2rem;margin-bottom:10px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700;cursor:pointer}
+.btn.whatsapp{background:var(--whatsapp)}
+.btn.email{background:var(--email)}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+.price-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);text-align:center}
+.form{max-width:900px;margin:20px auto}
+.form input,.form select,.form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef6;margin-bottom:10px}
+.form .btn{background:var(--accent);padding:10px 18px}
+.muted{color:var(--muted);text-align:center;margin-top:12px}
+.site-footer{background:#0b1220;color:#cbd5e1;padding:18px 0;text-align:center;margin-top:30px}
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(16px);transition:all .6s ease}
+.reveal.show{opacity:1;transform:none}
+@media (max-width:760px){.hero-inner{flex-direction:column}.nav a{display:none}}
