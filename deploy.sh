@@ -3,7 +3,7 @@
 if [ ! -d .git ]; then
   git init
   git branch -M main
-  git remote add origin https://github.com/codewithkryptora/upload
+  git remote add origin https://github.com/codewithkryptora/upload.git
 fi
 git add .
 git commit -m "Deploy: update site"
